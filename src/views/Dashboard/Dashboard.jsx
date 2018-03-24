@@ -42,7 +42,7 @@ class Dashboard extends Component {
             <div className="content">
                 <Grid fluid>
                     <Row>
-                        <Col lg={3} sm={6}>
+                        {/* <Col lg={3} sm={6}>
                             <StatsCard
                                 bigIcon={<i className="pe-7s-server text-warning"></i>}
                                 statsText="Capacity"
@@ -50,8 +50,8 @@ class Dashboard extends Component {
                                 statsIcon={<i className="fa fa-refresh"></i>}
                                 statsIconText="Updated now"
                             />
-                        </Col>
-                        <Col lg={3} sm={6}>
+                        </Col> */}
+                        {/* <Col lg={3} sm={6}>
                             <StatsCard
                                 bigIcon={<i className="pe-7s-wallet text-success"></i>}
                                 statsText="Revenue"
@@ -59,8 +59,8 @@ class Dashboard extends Component {
                                 statsIcon={<i className="fa fa-calendar-o"></i>}
                                 statsIconText="Last day"
                             />
-                        </Col>
-                        <Col lg={3} sm={6}>
+                        </Col> */}
+                        {/* <Col lg={3} sm={6}>
                             <StatsCard
                                 bigIcon={<i className="pe-7s-graph1 text-danger"></i>}
                                 statsText="Errors"
@@ -68,8 +68,8 @@ class Dashboard extends Component {
                                 statsIcon={<i className="fa fa-clock-o"></i>}
                                 statsIconText="In the last hour"
                             />
-                        </Col>
-                        <Col lg={3} sm={6}>
+                        </Col> */}
+                        {/* <Col lg={3} sm={6}>
                             <StatsCard
                                 bigIcon={<i className="fa fa-twitter text-info"></i>}
                                 statsText="Followers"
@@ -77,10 +77,10 @@ class Dashboard extends Component {
                                 statsIcon={<i className="fa fa-refresh"></i>}
                                 statsIconText="Updated now"
                             />
-                        </Col>
+                        </Col> */}
                     </Row>
                     <Row>
-                        <Col md={8}>
+                        {/* <Col md={8}>
                             <Card
                                 statsIcon="fa fa-history"
                                 id="chartHours"
@@ -103,8 +103,8 @@ class Dashboard extends Component {
                                     </div>
                                 }
                             />
-                        </Col>
-                        <Col md={4}>
+                        </Col> */}
+                        {/* <Col md={4}>
                             <Card
                                 statsIcon="fa fa-clock-o"
                                 title="Email Statistics"
@@ -121,7 +121,7 @@ class Dashboard extends Component {
                                     </div>
                                 }
                             />
-                        </Col>
+                        </Col> */}
                     </Row>
 
                     <Row>
@@ -130,7 +130,6 @@ class Dashboard extends Component {
                         <Card
                                 statsIcon="fa fa-clock-o"
                                 title="Most searched words"
-                                category="Last Campaign Performance"
                                 stats="Campaign sent 2 days ago"
                                 content={
                                     <div id="chartPreferences" className="ct-chart ct-perfect-fourth">
@@ -158,16 +157,30 @@ class Dashboard extends Component {
                      </TagCloud>                                   
                         </div>
                                 }
+                            />
+                        
+                        </Col>
+
+                        <Col md={6}>
+                            <Card
+                                statsIcon="fa fa-clock-o"
+                                title="Email Statistics"
+                                category="Last Campaign Performance"
+                                stats="Campaign sent 2 days ago"
+                                content={
+                                    <div id="chartPreferences" className="ct-chart ct-perfect-fourth">
+                                        <ChartistGraph data={dataPie} type="Pie"/>
+                                    </div>
+                                }
                                 legend={
                                     <div className="legend">
                                         {this.createLegend(legendPie)}
                                     </div>
                                 }
                             />
-                        
-                        </Col>
+                        </Col> 
 
-                        <Col md={6}>
+                        {/* <Col md={6}>
                             <Card
                                 title="Tasks"
                                 category="Backend development"
@@ -181,7 +194,7 @@ class Dashboard extends Component {
                                     </div>
                                 }
                             />
-                        </Col>
+                        </Col> */}
                     </Row>
 
                 </Grid>
