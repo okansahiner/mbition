@@ -19,6 +19,9 @@ import {
     legendBar
 } from 'variables/Variables.jsx';
 
+import TagCloud from 'react-tag-cloud';
+import randomColor from 'randomcolor';
+
 class Dashboard extends Component {
     createLegend(json){
         var legend = [];
@@ -123,28 +126,45 @@ class Dashboard extends Component {
 
                     <Row>
                         <Col md={6}>
-                            <Card
-                                id="chartActivity"
-                                title="2014 Sales"
-                                category="All products including Taxes"
-                                stats="Data information certified"
-                                statsIcon="fa fa-check"
+
+                        <Card
+                                statsIcon="fa fa-clock-o"
+                                title="Most searched words"
+                                category="Last Campaign Performance"
+                                stats="Campaign sent 2 days ago"
                                 content={
-                                    <div className="ct-chart">
-                                        <ChartistGraph
-                                            data={dataBar}
-                                            type="Bar"
-                                            options={optionsBar}
-                                            responsiveOptions={responsiveBar}
-                                        />
-                                    </div>
+                                    <div id="chartPreferences" className="ct-chart ct-perfect-fourth">
+                    <TagCloud 
+                        style={{
+                        fontFamily: 'sans-serif',
+                         fontSize: 30,
+                        fontWeight: 'bold',
+                        fontStyle: 'italic',
+                        color: () => randomColor(),
+                         padding: 5,
+                        width: '100%',
+                        height: '100%'
+                      }}>
+                             <div style={{fontSize: 50}}>Denmark</div>
+                             <div rotate={90} style={{fontSize: 50}} >Munich</div>
+                             <div style={{color: 'green',fontSize: 30}}>Berlin</div>
+                             <div style={{color: 'green',fontSize: 30}}>Leipzig</div>
+                             <div style={{color: 'green',fontSize: 30}}>Essen</div>
+                             <div style={{color: 'green',fontSize: 30}}>Norway</div>
+                             <div style={{fontSize: 15}}>Sweden</div>
+
+
+
+                     </TagCloud>                                   
+                        </div>
                                 }
                                 legend={
                                     <div className="legend">
-                                        {this.createLegend(legendBar)}
+                                        {this.createLegend(legendPie)}
                                     </div>
                                 }
                             />
+                        
                         </Col>
 
                         <Col md={6}>
