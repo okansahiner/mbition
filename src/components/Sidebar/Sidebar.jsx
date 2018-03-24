@@ -41,9 +41,9 @@ class Sidebar extends Component{
             <div id="sidebar" className="sidebar" data-color="black" data-image={imagine}>
                 <div className="sidebar-background" style={sidebarBackground}></div>
 
-                    <div className="logo">
+                    <div className="logo" style={{padding:"5px 5px 0px 5px"}}>
                         <LogoBox>
-                                <img src={logo} alt="logo_image" height={"50px"}/>
+                                <img src={logo} alt="logo_image" width={"250px"}/>
                          </LogoBox>
                     </div>
                 <div className="sidebar-wrapper">
