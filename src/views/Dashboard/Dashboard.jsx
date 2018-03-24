@@ -164,7 +164,7 @@ class Dashboard extends Component {
                         <Col md={6}>
                             <Card
                                 statsIcon="fa fa-clock-o"
-                                title="Email Statistics"
+                                title="Time Spent per App"
                                 category="Last Campaign Performance"
                                 stats="Campaign sent 2 days ago"
                                 content={
