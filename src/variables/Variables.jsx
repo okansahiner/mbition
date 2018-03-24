@@ -483,7 +483,7 @@ var dataPie = {
 };
 var legendPie = {
     names: ["Bluetooth","Phone","Fm", "Settings", "Home", "Massage"],
-    types: ["info","danger","warning"]
+    types: ["info","danger","warning", "info", "danger", "warning"]
 };
 
 // Data for Line Chart

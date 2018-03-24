@@ -129,8 +129,7 @@ class Dashboard extends Component {
 
                         <Card
                                 statsIcon="fa fa-clock-o"
-                                title="Most searched words"
-                                stats="Campaign sent 2 days ago"
+                                title="Most Searched Words"
                                 content={
                                     <div id="chartPreferences" className="ct-chart ct-perfect-fourth">
                     <TagCloud 
@@ -165,8 +164,6 @@ class Dashboard extends Component {
                             <Card
                                 statsIcon="fa fa-clock-o"
                                 title="Time Spent per App"
-                                category="Last Campaign Performance"
-                                stats="Campaign sent 2 days ago"
                                 content={
                                     <div id="chartPreferences" className="ct-chart ct-perfect-fourth">
                                         <ChartistGraph data={dataPie} type="Pie"/>
